@@ -18,7 +18,7 @@
 
 	//get the weather conditions from the current coordinates
 	function setConditions(lat, lng){
-		var requestURL = "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lng+"&appid=91f05e4330f6e85cab273b8b1ad8bb71&units=metric",
+		var requestURL = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lng+"&appid=91f05e4330f6e85cab273b8b1ad8bb71&units=metric",
 			request = new XMLHttpRequest();
 			request.open('GET', requestURL);
 			request.responseType = 'json';
